@@ -21,7 +21,9 @@ def main() -> None:
     record: SourceRecord = json.loads((root / "brickwrangler-source.json").read_text())
     # The upstream branch is an unmodified official-release import. Include its
     # entire inventory, reading the corrected files from the current branch.
-    names = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", "upstream"], cwd=root, text=True).splitlines()
+    names = subprocess.check_output(
+        ["git", "ls-tree", "-r", "--name-only", "upstream"], cwd=root, text=True
+    ).splitlines()
     names.append("brickwrangler-source.json")
     target = root / "dist" / "complete.zip"
     target.parent.mkdir(exist_ok=True)
