@@ -5,7 +5,7 @@ used by [Brick Wrangler](https://github.com/shangaslammi/brick-wrangler).
 This is not an official LDraw distribution or an LDraw-endorsed project.
 
 Base: official **2026-09**, imported unchanged on the `upstream` branch.
-Fork release: **2026-09+bw.2**. Download
+Fork release: **2026-09+bw.3**. Download
 [`complete.zip`](https://github.com/shangaslammi/ldraw-parts/releases/latest/download/complete.zip)
 or point `BRICKWRANGLER_LDRAW` at this checkout.
 
@@ -16,6 +16,11 @@ walls. The original author and license are retained, the changed part is marked
 unofficial, and each change has a history entry. `parts/11253.dat` also joins
 four mismatched roller-skate face boundaries using its existing vertices.
 See [CHANGES.md](CHANGES.md).
+
+The fork also includes 327 IDs advertised by Rebrickable but absent from
+the official base, with their unofficial dependencies. Files with hold votes
+and roots depending on them are excluded. Existing library files are retained.
+See [UNOFFICIAL_IMPORT.md](UNOFFICIAL_IMPORT.md).
 
 ## Upstream
 
@@ -35,13 +40,13 @@ To publish a committed release:
 
 ```sh
 python3 tools/package_release.py
-git tag 2026-09+bw.2
+git tag 2026-09+bw.3
 git push origin main upstream --tags
-gh release create 2026-09+bw.2 dist/complete.zip --title '2026-09+bw.2' --notes-file RELEASE_NOTES.md
+gh release create 2026-09+bw.3 dist/complete.zip --title '2026-09+bw.3' --notes-file RELEASE_NOTES.md
 ```
 
-`tools/package_release.py` packages the full official inventory plus the source
-record. It reads corrected contents from the working branch, refuses uncommitted
+`tools/package_release.py` packages the full official inventory, tracked additions under
+`parts/` and `p/`, and the source record. It reads corrected contents from the working branch, refuses uncommitted
 changes, and keeps archive order/timestamps deterministic.
 
 For an upstream update, import the new official archive on `upstream`, then

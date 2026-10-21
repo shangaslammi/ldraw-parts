@@ -19,12 +19,16 @@ def main() -> None:
     if dirty:
         raise SystemExit("Commit source changes before packaging a release")
     record: SourceRecord = json.loads((root / "brickwrangler-source.json").read_text())
-    # The upstream branch is an unmodified official-release import. Include its
-    # entire inventory, reading the corrected files from the current branch.
-    names = subprocess.check_output(
-        ["git", "ls-tree", "-r", "--name-only", "upstream"], cwd=root, text=True
+    # Keep the entire official inventory, plus tracked unofficial library files.
+    # Documentation and tools remain outside the standard complete.zip layout.
+    names = set(
+        subprocess.check_output(["git", "ls-tree", "-r", "--name-only", "upstream"], cwd=root, text=True).splitlines()
+    )
+    additions = subprocess.check_output(
+        ["git", "ls-tree", "-r", "--name-only", "HEAD", "--", "parts", "p"], cwd=root, text=True
     ).splitlines()
-    names.append("brickwrangler-source.json")
+    names.update(additions)
+    names.add("brickwrangler-source.json")
     target = root / "dist" / "complete.zip"
     target.parent.mkdir(exist_ok=True)
     with zipfile.ZipFile(target, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
