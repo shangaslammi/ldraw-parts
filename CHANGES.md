@@ -1,5 +1,25 @@
 # Changes from the official library
 
+## 2026-09+bw.2 — 2026-10-21
+
+Correct `parts/11253.dat` (Minifig Roller Skate). Four top faces and their
+type-2 boundary edges took a direct chord between two vertices while adjacent
+inside faces followed an existing intermediate vertex 0.00376348 LDU off that
+chord. Split each quad into three triangles through the existing vertex and
+split its edge to match. No coordinates or idealized socket dimensions are
+invented. Preserve the original author/license; mark the modified part unofficial.
+
+The nominal stud-space intrusion falls from 0.00368364 to 0.00002009 LDU,
+below Brick Wrangler's existing mesh roundoff. Checked experimental proxies
+cover all 694 corrected source triangles. This source correction alone does
+not fix the collision proxy's missing underside seat; that remains separate
+proxy-generation work. The earlier 45677 corrections are unchanged.
+
+Evidence and proposed geometry patch:
+[Brick Wrangler source investigation](https://github.com/shangaslammi/brick-wrangler/blob/codex/omr-collision-pilot/reports/tasks/omr-source-mesh-followup.md).
+No claw-plate triangulation change is included, and nothing has been submitted
+to the upstream Parts Tracker.
+
 ## 2026-09+bw.1 — 2026-10-21
 
 Only `parts/45677.dat` geometry changes; all other upstream files are unchanged.

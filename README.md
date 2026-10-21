@@ -5,7 +5,7 @@ used by [Brick Wrangler](https://github.com/shangaslammi/brick-wrangler).
 This is not an official LDraw distribution or an LDraw-endorsed project.
 
 Base: official **2026-09**, imported unchanged on the `upstream` branch.
-Fork release: **2026-09+bw.1**. Download
+Fork release: **2026-09+bw.2**. Download
 [`complete.zip`](https://github.com/shangaslammi/ldraw-parts/releases/latest/download/complete.zip)
 or point `BRICKWRANGLER_LDRAW` at this checkout.
 
@@ -13,7 +13,9 @@ The fork keeps corrections small and independently reviewable. `parts/45677.dat`
 has three corrections: its socket walls now match the radius-6 cap primitives;
 adjacent underside seam vertices agree; and the rear ledge meets its diagonal
 walls. The original author and license are retained, the changed part is marked
-unofficial, and each change has a history entry. See [CHANGES.md](CHANGES.md).
+unofficial, and each change has a history entry. `parts/11253.dat` also joins
+four mismatched roller-skate face boundaries using its existing vertices.
+See [CHANGES.md](CHANGES.md).
 
 ## Upstream
 
@@ -33,9 +35,9 @@ To publish a committed release:
 
 ```sh
 python3 tools/package_release.py
-git tag 2026-09+bw.1
+git tag 2026-09+bw.2
 git push origin main upstream --tags
-gh release create 2026-09+bw.1 dist/complete.zip --title '2026-09+bw.1' --notes-file RELEASE_NOTES.md
+gh release create 2026-09+bw.2 dist/complete.zip --title '2026-09+bw.2' --notes-file RELEASE_NOTES.md
 ```
 
 `tools/package_release.py` packages the full official inventory plus the source
