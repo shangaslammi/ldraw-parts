@@ -1,7 +1,7 @@
 0 Tile  1 x  1 with Emoji Face, Eyes Closed and Cheeks Pattern
 0 Name: 3070bp1f.dat
 0 Author: Takeshi Takahashi [RainbowDolphin]
-0 !LDRAW_ORG Unofficial_Part
+0 !LDRAW_ORG Part UPDATE 2026-10
 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 
 0 BFC CERTIFY CCW
@@ -11,7 +11,7 @@
 0 !KEYWORDS Ice cream, Rebrickable 3070bpr0217, Set 41910
 
 0 !HISTORY 2026-10-01 [Cheenzo] Modified Orange to Medium Nougat and fixed T-Junctions
-0 !HISTORY 2026-10-22 {Brick Wrangler project} Included from LDraw Parts Tracker in fork release 2026-09+bw.3
+0 !HISTORY 2026-10-26 [OrionP] Official Update 2026-10
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
 1 84 0 0 -6 -3 0 0 0 1 0 0 0 -3 2-4disc.dat

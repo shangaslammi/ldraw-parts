@@ -1,21 +1,26 @@
-Refines one rounded inner-wall corner in the two shared 2 x 4 wing subparts,
-`s/41770as01.dat` and `s/41770bs01.dat`. The correction follows the nominal
-four-LDU offset of the existing 1:4 wall; every incident face and edge uses
-the same refined vertex. Original authors and licenses are preserved, and
-the modified subparts are marked unofficial.
+# LDraw 2026-10+bw.1 for Brick Wrangler
 
-Both 41769/41770 hands and a/b moulds inherit the correction. Nominal stud-seat
-intrusion falls from 0.003893418760 to 0.000235175697 LDU, within the unchanged
-0.001-LDU source roundoff. All eight affected descendants pass independent
-closed-mesh, material, free-space, original-surface coverage and bounds checks;
-their surface certificates have zero uncovered triangles.
+Merge the complete official 2026-10 library, released 2026-10-26, onto the
+maintained fork. The unchanged official base is separately committed as
+`21f2b40a` on `upstream-2026-10`. Its 37,448 files exactly match the official
+complete archive; applying the official update to 2026-09 gives the same tree.
+There are 259 changed/added paths including configuration and release notes,
+with no removed files.
 
-Both hands, both moulds and 63330/63333 also pass production builders with
-Shadow fork commit 0cfb26187631c6b62759b265d27bcaedaae7c2f9, which adds
-independently verified missing seats at z=10. This geometry release does not
-itself add connector data or relax checks. No 3933/3934 repair, physical measurement or assembly validation
-is claimed. Earlier source corrections and unofficial additions are unchanged.
+Sixteen add/add overlaps are prior unofficial imports now certified upstream.
+Resolve each to the exact official file: normalized geometry and BFC/TEXMAP
+records are identical. All four locally corrected files (`45677`, `11253`,
+`s/41770as01`, `s/41770bs01`) remain byte-for-byte unchanged from bw.4.
+Unrelated unofficial additions remain intact. No current Parts Tracker source
+supersedes these corrections or fixes the held house candidates.
 
-Source identity: `2026-09+bw.4`, based on official 2026-09. The complete archive
-keeps the standard `ldraw/parts/` and `ldraw/p/` layout. Nothing has been submitted
-to the upstream Parts Tracker. See CHANGES.md for numerical evidence and scope.
+The recursive source audit identifies one physically affected curated part,
+`42022`, and twelve byte-affected print identities. The changed print surface
+is `88930py0`; `88930pz4` changes conditional edges only. LDConfig changes only
+AVATAR metadata; colour definitions are unchanged. Catalogue validation and
+print-equivalence results are recorded in the Brick Wrangler upstream task.
+
+This is a new immutable source identity, `2026-10+bw.1`; previous archives are
+unchanged. It includes official fixes without claiming new catalogue coverage
+for every newly released part. No source correction is submitted upstream.
+

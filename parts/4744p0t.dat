@@ -1,15 +1,16 @@
 0 Brick  2 x  4 x  2 with Curved Top with Horned Troll Face Pattern
 0 Name: 4744p0t.dat
 0 Author: Chris Böhnke [KnightOfTarenta]
-0 !LDRAW_ORG Unofficial_Part
+0 !LDRAW_ORG Part UPDATE 2026-10
 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
-0 !HISTORY 2026-10-22 {Brick Wrangler project} Included from LDraw Parts Tracker in fork release 2026-09+bw.3
 
 0 BFC CERTIFY CCW
 
 0 !CATEGORY Brick
 0 !KEYWORDS Bricklink 4744pb14, Freestyle, Friendly Monster Bucket
 0 !KEYWORDS Jack in the Box, Rebrickable 4744pr0027, Set 2123, Set 2195, spinner
+
+0 !HISTORY 2026-10-26 [OrionP] Official Update 2026-10
 
 0 // Base Part
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4744s01.dat

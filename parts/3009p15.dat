@@ -1,15 +1,16 @@
 0 Brick  1 x  6 with Red "1" and Four Stars with Yellow Borders Pattern
 0 Name: 3009p15.dat
 0 Author: Marc Giraudet [Mad_Marc]
-0 !LDRAW_ORG Unofficial_Part
+0 !LDRAW_ORG Part UPDATE 2026-10
 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
-0 !HISTORY 2026-10-22 {Brick Wrangler project} Included from LDraw Parts Tracker in fork release 2026-09+bw.3
 
 0 BFC CERTIFY CCW
 
 0 !CATEGORY Brick
 0 !KEYWORDS Bricklink 3009pb044, city center, Rebrickable 3009pr0049, Set 6432
 0 !KEYWORDS Town Junior
+
+0 !HISTORY 2026-10-26 [OrionP] Official Update 2026-10
 
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
 

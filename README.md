@@ -4,8 +4,8 @@ A maintained source fork of the [official LDraw parts library](https://library.l
 used by [Brick Wrangler](https://github.com/shangaslammi/brick-wrangler).
 This is not an official LDraw distribution or an LDraw-endorsed project.
 
-Base: official **2026-09**, imported unchanged on the `upstream` branch.
-Fork release: **2026-09+bw.4**. Download
+Base: official **2026-10**, imported unchanged on the `upstream` branch.
+Fork release: **2026-10+bw.1**. Download
 [`complete.zip`](https://github.com/shangaslammi/ldraw-parts/releases/latest/download/complete.zip)
 or point `BRICKWRANGLER_LDRAW` at this checkout.
 
@@ -24,8 +24,10 @@ affected descendants pass independent closed-mesh, material, free-space,
 surface-coverage and bounds checks. Both hands and moulds also pass production
 builders with the corresponding verified seats in our Shadow fork.
 
-The fork also includes 327 IDs advertised by Rebrickable but absent from
-the official base, with their unofficial dependencies. Files with hold votes
+The fork originally imported 327 IDs advertised by Rebrickable but absent from
+official 2026-09, with their unofficial dependencies. Official 2026-10 now
+supersedes 16 imported files with the certified versions; their geometry is
+unchanged. The remaining unofficial additions are retained. Files with hold votes
 and roots depending on them are excluded. Existing library files are retained.
 See [UNOFFICIAL_IMPORT.md](UNOFFICIAL_IMPORT.md).
 
@@ -47,9 +49,9 @@ To publish a committed release:
 
 ```sh
 python3 tools/package_release.py
-git tag 2026-09+bw.4
+git tag 2026-10+bw.1
 git push origin main upstream --tags
-gh release create 2026-09+bw.4 dist/complete.zip --title '2026-09+bw.4' --notes-file RELEASE_NOTES.md
+gh release create 2026-10+bw.1 dist/complete.zip --title '2026-10+bw.1' --notes-file RELEASE_NOTES.md
 ```
 
 `tools/package_release.py` packages the full official inventory, tracked additions under

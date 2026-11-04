@@ -1,11 +1,12 @@
 0 ~Animal Cat Sitting with Sand Green Eye, Dark Brown Facial Markings and White Auricles, Chin, and Paws Half Pattern
 0 Name: s\11602p03s01.dat
 0 Author: Philippe Hurbain [Philo]
-0 !LDRAW_ORG Unofficial_Subpart
+0 !LDRAW_ORG Subpart UPDATE 2026-10
 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
-0 !HISTORY 2026-10-22 {Brick Wrangler project} Included from LDraw Parts Tracker in fork release 2026-09+bw.3
 
 0 BFC CERTIFY CCW
+
+0 !HISTORY 2026-10-26 [OrionP] Official Update 2026-10
 
 3 15 14.229 -46.688 -10.639 12.7149 -47.4202 -10.9206 12.92 -46.8179 -10.8887
 3 15 16.076 -48.187 -10.514 12.323 -50.321 -11.071 14.229 -46.688 -10.639
