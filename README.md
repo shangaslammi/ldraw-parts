@@ -29,7 +29,8 @@ official 2026-09, with their unofficial dependencies. Official 2026-10 now
 supersedes 16 imported files with the certified versions; their geometry is
 unchanged. The remaining unofficial additions are retained. Files with hold votes
 and roots depending on them are excluded. Existing library files are retained.
-See [UNOFFICIAL_IMPORT.md](UNOFFICIAL_IMPORT.md).
+See [UNOFFICIAL_IMPORT.md](UNOFFICIAL_IMPORT.md). The existing menu print `26603p0d` also
+receives a checked tracker colour correction; it remains unofficial.
 
 ## Upstream
 

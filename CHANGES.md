@@ -22,6 +22,15 @@ is `88930py0`; `88930pz4` changes conditional edges only. LDConfig changes only
 AVATAR metadata; colour definitions are unchanged. Catalogue validation and
 print-equivalence results are recorded in the Brick Wrangler upstream task.
 
+Additionally refresh the already imported unofficial menu tile print
+`26603p0d` from Philippe Hurbain's 2026-10-23 Parts Tracker correction. Its mug
+interior now uses the intended main colour. The tracker has no current hold;
+the single dependency `s/26603s01.dat` is unchanged. The exact updated print
+passes Brick Wrangler's existing bidirectional surface-equivalence check
+against catalogue base `26603`. Preserve attribution, license and unofficial
+status, with a dated fork import history line. Other pending tracker geometry
+revisions are not included.
+
 This is a new immutable source identity, `2026-10+bw.1`; previous archives are
 unchanged. It includes official fixes without claiming new catalogue coverage
 for every newly released part. No source correction is submitted upstream.
