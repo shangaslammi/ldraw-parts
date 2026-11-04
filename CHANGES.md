@@ -1,5 +1,33 @@
 # Changes from the official library
 
+## 2026-09+bw.4 — 2026-11-04
+
+Refine the common inner-wall corner in `parts/s/41770as01.dat` and
+`parts/s/41770bs01.dat` from `(14.38, y, 34.03)` to
+`(14.3844, y, 34.03)`, consistently across adjoining faces and edges.
+The outer wall has slope 1:4; its nominal four-LDU normal offset gives
+`x = z/4 + 10 - sqrt(17)`, or 14.3843943744 at this Z. Preserve original
+authors, licenses and history; mark the modified shared subparts unofficial.
+
+Both 41769/41770 hands and a/b moulds inherit the correction. Nominal stud-seat
+intrusion falls from 0.003893418760 to 0.000235175697 LDU, within the unchanged
+0.001-LDU source roundoff. All eight affected descendants (41769, 41769a/b,
+41770, 41770a/b, 63330 and 63333) pass closed-mesh decomposition, material and
+free-space probes, original-mesh surface coverage and bounds checks. Their
+surface certificates have zero uncovered triangles.
+
+Full production builders also pass for both hands, both moulds and the
+63330/63333 descendants when paired with Shadow fork commit
+0cfb26187631c6b62759b265d27bcaedaae7c2f9, which adds independently verified
+missing seats at z=10. This geometry release does not itself add Shadow data
+or relax checks. No physical measurement or assembly validation is claimed. No 3933/3934 geometry is changed. The 45677/11253 corrections and
+unofficial additions from earlier releases remain unchanged.
+
+Evidence and the separately reviewable source patch:
+[Brick Wrangler house wedge source task](https://github.com/shangaslammi/brick-wrangler/blob/codex/house-catalog-tooling/reports/tasks/house-wedge-mesh.md).
+The source record identifies this release as `2026-09+bw.4`, based on official
+2026-09. Nothing has been submitted to the upstream Parts Tracker.
+
 ## 2026-09+bw.3 — 2026-10-22
 
 Adds 327 Rebrickable-advertised LDraw IDs absent from official 2026-09,

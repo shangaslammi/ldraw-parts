@@ -1,20 +1,21 @@
-Adds 327 Rebrickable-advertised LDraw IDs absent from official 2026-09,
-with their required unofficial dependencies from the LDraw Parts Tracker.
-The archive gains 571 files: 359 parts (327 selected IDs and 32 dependencies),
-164 subparts, 21 primitives and 27 texture images. Original author, license,
-and unofficial status headers are retained, with a dated fork history line.
+Refines one rounded inner-wall corner in the two shared 2 x 4 wing subparts,
+`s/41770as01.dat` and `s/41770bs01.dat`. The correction follows the nominal
+four-LDU offset of the existing 1:4 wall; every incident face and edge uses
+the same refined vertex. Original authors and licenses are preserved, and
+the modified subparts are marked unofficial.
 
-Of 435 advertised values considered, 85 are excluded because the file or a
-required dependency carries a hold vote, 21 are absent from the unofficial
-archive, and two are non-filename placeholders. Every included file parses
-and its references resolve with the existing official files retained.
-No existing library file is replaced; earlier 45677 and 11253 corrections
-remain byte-for-byte unchanged. Seven referenced paths have differing
-tracker updates, which are excluded in favour of the existing files.
+Both 41769/41770 hands and a/b moulds inherit the correction. Nominal stud-seat
+intrusion falls from 0.003893418760 to 0.000235175697 LDU, within the unchanged
+0.001-LDU source roundoff. All eight affected descendants pass independent
+closed-mesh, material, free-space, original-surface coverage and bounds checks;
+their surface certificates have zero uncovered triangles.
 
-The source record identifies this release as `2026-09+bw.3`.
-`complete.zip` retains the standard `ldraw/parts/` and `ldraw/p/` layout.
-The packaging helper now includes tracked additions as well as every file
-in the official base, preserving the existing deterministic ZIP settings.
-These are unofficial source files, not a new claim of physical/proxy validation.
-See UNOFFICIAL_IMPORT.md for selection, exclusions and conflict details.
+Both hands, both moulds and 63330/63333 also pass production builders with
+Shadow fork commit 0cfb26187631c6b62759b265d27bcaedaae7c2f9, which adds
+independently verified missing seats at z=10. This geometry release does not
+itself add connector data or relax checks. No 3933/3934 repair, physical measurement or assembly validation
+is claimed. Earlier source corrections and unofficial additions are unchanged.
+
+Source identity: `2026-09+bw.4`, based on official 2026-09. The complete archive
+keeps the standard `ldraw/parts/` and `ldraw/p/` layout. Nothing has been submitted
+to the upstream Parts Tracker. See CHANGES.md for numerical evidence and scope.
