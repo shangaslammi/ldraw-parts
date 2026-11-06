@@ -1,5 +1,98 @@
 # Changes from the official library
 
+## 2026-10+bw.2 — 2026-11-06
+
+Match the two short stud-dent wall extensions in `parts/s/51739s01.dat`
+to the continued facets of its existing radius-six `3-16cylo` primitive.
+Intersect those facets with the unchanged exterior wall `z = 2x - 60`;
+update both `rect3` wall transforms and every adjoining face and edge.
+The two resulting joins are `(24.2845391662, -11.4309216676)` and
+`(27.7791962861, -4.44160742783)` in the subpart's X/Z plane. Maximum
+vertex movement is 0.003122191 LDU. Existing conditional-edge controls
+independently follow the same facet continuations within source roundoff.
+
+The original author, licence, old history and line endings are preserved;
+the shared subpart is marked unofficial with a dated project history.
+Both 2 x 2 wing hands (`24299`, `24307`), their `p01` prints and `51739`
+inherit the correction. The four earlier source corrections remain unchanged.
+No Shadow connector, collision tolerance or source-roundoff limit changes.
+
+The nominal seats of both 2 x 2 wings no longer contain the 0.002466626-LDU
+source intrusion. All five descendants pass material/free-space probes and
+continuous corrected-source surface coverage; their original OMR 31072
+assembly contacts validate. Source-supported blocked controls remain blocked.
+The physical catalogue parts keep their existing connector coverage; no new
+reviewed print link is implied. This is a source-continuity correction, not a
+physical measurement of the manufactured mould.
+
+Publish this as a new immutable source identity, `2026-10+bw.2`, based on
+official 2026-10. The older archives remain unchanged. Nothing has been
+submitted to the upstream Parts Tracker. The separate `27261` alternative
+diagonal is not included: its physical surface remains unverified.
+
+## 2026-10+bw.1 — 2026-11-04
+
+Merge the complete official 2026-10 library, released 2026-10-26, onto the
+maintained fork. The unchanged official base is separately committed as
+`21f2b40a` on `upstream-2026-10`. Its 37,448 files exactly match the official
+complete archive; applying the official update to 2026-09 gives the same tree.
+There are 259 changed/added paths including configuration and release notes,
+with no removed files.
+
+Sixteen add/add overlaps are prior unofficial imports now certified upstream.
+Resolve each to the exact official file: normalized geometry and BFC/TEXMAP
+records are identical. All four locally corrected files (`45677`, `11253`,
+`s/41770as01`, `s/41770bs01`) remain byte-for-byte unchanged from bw.4.
+Unrelated unofficial additions remain intact. No current Parts Tracker source
+supersedes these corrections or fixes the held house candidates.
+
+The recursive source audit identifies one physically affected curated part,
+`42022`, and twelve byte-affected print identities. The changed print surface
+is `88930py0`; `88930pz4` changes conditional edges only. LDConfig changes only
+AVATAR metadata; colour definitions are unchanged. Catalogue validation and
+print-equivalence results are recorded in the Brick Wrangler upstream task.
+
+Additionally refresh the already imported unofficial menu tile print
+`26603p0d` from Philippe Hurbain's 2026-10-23 Parts Tracker correction. Its mug
+interior now uses the intended main colour. The tracker has no current hold;
+the single dependency `s/26603s01.dat` is unchanged. The exact updated print
+passes Brick Wrangler's existing bidirectional surface-equivalence check
+against catalogue base `26603`. Preserve attribution, license and unofficial
+status, with a dated fork import history line. Other pending tracker geometry
+revisions are not included.
+
+This is a new immutable source identity, `2026-10+bw.1`; previous archives are
+unchanged. It includes official fixes without claiming new catalogue coverage
+for every newly released part. No source correction is submitted upstream.
+
+## 2026-09+bw.4 — 2026-11-04
+
+Refine the common inner-wall corner in `parts/s/41770as01.dat` and
+`parts/s/41770bs01.dat` from `(14.38, y, 34.03)` to
+`(14.3844, y, 34.03)`, consistently across adjoining faces and edges.
+The outer wall has slope 1:4; its nominal four-LDU normal offset gives
+`x = z/4 + 10 - sqrt(17)`, or 14.3843943744 at this Z. Preserve original
+authors, licenses and history; mark the modified shared subparts unofficial.
+
+Both 41769/41770 hands and a/b moulds inherit the correction. Nominal stud-seat
+intrusion falls from 0.003893418760 to 0.000235175697 LDU, within the unchanged
+0.001-LDU source roundoff. All eight affected descendants (41769, 41769a/b,
+41770, 41770a/b, 63330 and 63333) pass closed-mesh decomposition, material and
+free-space probes, original-mesh surface coverage and bounds checks. Their
+surface certificates have zero uncovered triangles.
+
+Full production builders also pass for both hands, both moulds and the
+63330/63333 descendants when paired with Shadow fork commit
+0cfb26187631c6b62759b265d27bcaedaae7c2f9, which adds independently verified
+missing seats at z=10. This geometry release does not itself add Shadow data
+or relax checks. No physical measurement or assembly validation is claimed. No 3933/3934 geometry is changed. The 45677/11253 corrections and
+unofficial additions from earlier releases remain unchanged.
+
+Evidence and the separately reviewable source patch:
+[Brick Wrangler house wedge source task](https://github.com/shangaslammi/brick-wrangler/blob/codex/house-catalog-tooling/reports/tasks/house-wedge-mesh.md).
+The source record identifies this release as `2026-09+bw.4`, based on official
+2026-09. Nothing has been submitted to the upstream Parts Tracker.
+
 ## 2026-09+bw.3 — 2026-10-22
 
 Adds 327 Rebrickable-advertised LDraw IDs absent from official 2026-09,

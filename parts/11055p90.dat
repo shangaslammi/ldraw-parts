@@ -1,9 +1,8 @@
 0 Flag  2 x  2 with with Classic Space Logo on Both Sides Pattern
 0 Name: 11055p90.dat
 0 Author: Gabriel Läufer [Dr.Bricktacular]
-0 !LDRAW_ORG Unofficial_Part
+0 !LDRAW_ORG Part UPDATE 2026-10
 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
-0 !HISTORY 2026-10-22 {Brick Wrangler project} Included from LDraw Parts Tracker in fork release 2026-09+bw.3
 
 0 BFC CERTIFY CCW
 
@@ -11,6 +10,8 @@
 0 !KEYWORDS astronaut, Bricklink 2335pb143, Brickowl 30399, Brickset 25362, CFM
 0 !KEYWORDS Collectable Minifigures, Rebrickable 11055pr0013, Series 15
 0 !KEYWORDS Set 71011
+
+0 !HISTORY 2026-10-26 [OrionP] Official Update 2026-10
 
 0 // Patter-Basepart
 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11055s01.dat

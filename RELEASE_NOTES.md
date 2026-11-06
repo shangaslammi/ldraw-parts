@@ -1,20 +1,20 @@
-Adds 327 Rebrickable-advertised LDraw IDs absent from official 2026-09,
-with their required unofficial dependencies from the LDraw Parts Tracker.
-The archive gains 571 files: 359 parts (327 selected IDs and 32 dependencies),
-164 subparts, 21 primitives and 27 texture images. Original author, license,
-and unofficial status headers are retained, with a dated fork history line.
+# LDraw 2026-10+bw.2 for Brick Wrangler
 
-Of 435 advertised values considered, 85 are excluded because the file or a
-required dependency carries a hold vote, 21 are absent from the unofficial
-archive, and two are non-filename placeholders. Every included file parses
-and its references resolve with the existing official files retained.
-No existing library file is replaced; earlier 45677 and 11253 corrections
-remain byte-for-byte unchanged. Seven referenced paths have differing
-tracker updates, which are excluded in favour of the existing files.
+Correct the two short stud-dent wall extensions in the shared 2 x 2 wing
+subpart `s/51739s01.dat` using that subpart's own radius-six cylinder facets
+and existing exterior wall. Maximum vertex movement is 0.003122191 LDU.
+Update the adjoining faces, edges and wall transforms consistently; preserve
+the original author, licence and history, and mark the changed subpart unofficial.
 
-The source record identifies this release as `2026-09+bw.3`.
-`complete.zip` retains the standard `ldraw/parts/` and `ldraw/p/` layout.
-The packaging helper now includes tracked additions as well as every file
-in the official base, preserving the existing deterministic ZIP settings.
-These are unofficial source files, not a new claim of physical/proxy validation.
-See UNOFFICIAL_IMPORT.md for selection, exclusions and conflict details.
+Both hands (`24299`, `24307`), their `p01` prints and `51739` inherit the
+correction. All five descendants pass material/free-space probes and continuous
+corrected-source surface coverage. Both original OMR 31072 wedge contacts now
+validate; source-supported blocked controls remain blocked. No Shadow
+connections, tolerance or source-roundoff policy changes. The geometry follows
+existing source facets; it is not an independent physical measurement.
+
+This release retains the complete official 2026-10 base, the previous four
+source corrections and all unrelated unofficial imports unchanged. The
+unverified `27261` alternative diagonal is not included. It creates the new
+immutable identity `2026-10+bw.2`; previous archives remain unchanged.
+Nothing has been submitted upstream. See `CHANGES.md` for the derivation and limits.
