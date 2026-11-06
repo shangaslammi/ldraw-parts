@@ -5,7 +5,7 @@ used by [Brick Wrangler](https://github.com/shangaslammi/brick-wrangler).
 This is not an official LDraw distribution or an LDraw-endorsed project.
 
 Base: official **2026-10**, imported unchanged on the `upstream` branch.
-Fork release: **2026-10+bw.1**. Download
+Fork release: **2026-10+bw.2**. Download
 [`complete.zip`](https://github.com/shangaslammi/ldraw-parts/releases/latest/download/complete.zip)
 or point `BRICKWRANGLER_LDRAW` at this checkout.
 
@@ -23,6 +23,14 @@ offset. Both hands and moulds retain their common source geometry. All eight
 affected descendants pass independent closed-mesh, material, free-space,
 surface-coverage and bounds checks. Both hands and moulds also pass production
 builders with the corresponding verified seats in our Shadow fork.
+
+The shared 2 x 2 wing stud-dent subpart `s/51739s01.dat` now continues its
+existing radius-six cylinder facets to the unchanged exterior wall. Both hands,
+their p01 prints and `51739` inherit the correction; maximum vertex movement
+is 0.003122191 LDU. The original intended assemblies now clear without changing
+collision tolerance, and all five descendants retain complete source coverage
+and pass the material/free-space checks. This geometric continuity correction
+makes no claim of an independently measured physical mould profile.
 
 The fork originally imported 327 IDs advertised by Rebrickable but absent from
 official 2026-09, with their unofficial dependencies. Official 2026-10 now
@@ -50,9 +58,9 @@ To publish a committed release:
 
 ```sh
 python3 tools/package_release.py
-git tag 2026-10+bw.1
+git tag 2026-10+bw.2
 git push origin main upstream --tags
-gh release create 2026-10+bw.1 dist/complete.zip --title '2026-10+bw.1' --notes-file RELEASE_NOTES.md
+gh release create 2026-10+bw.2 dist/complete.zip --title '2026-10+bw.2' --notes-file RELEASE_NOTES.md
 ```
 
 `tools/package_release.py` packages the full official inventory, tracked additions under

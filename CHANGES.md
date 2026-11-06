@@ -1,5 +1,35 @@
 # Changes from the official library
 
+## 2026-10+bw.2 — 2026-11-06
+
+Match the two short stud-dent wall extensions in `parts/s/51739s01.dat`
+to the continued facets of its existing radius-six `3-16cylo` primitive.
+Intersect those facets with the unchanged exterior wall `z = 2x - 60`;
+update both `rect3` wall transforms and every adjoining face and edge.
+The two resulting joins are `(24.2845391662, -11.4309216676)` and
+`(27.7791962861, -4.44160742783)` in the subpart's X/Z plane. Maximum
+vertex movement is 0.003122191 LDU. Existing conditional-edge controls
+independently follow the same facet continuations within source roundoff.
+
+The original author, licence, old history and line endings are preserved;
+the shared subpart is marked unofficial with a dated project history.
+Both 2 x 2 wing hands (`24299`, `24307`), their `p01` prints and `51739`
+inherit the correction. The four earlier source corrections remain unchanged.
+No Shadow connector, collision tolerance or source-roundoff limit changes.
+
+The nominal seats of both 2 x 2 wings no longer contain the 0.002466626-LDU
+source intrusion. All five descendants pass material/free-space probes and
+continuous corrected-source surface coverage; their original OMR 31072
+assembly contacts validate. Source-supported blocked controls remain blocked.
+The physical catalogue parts keep their existing connector coverage; no new
+reviewed print link is implied. This is a source-continuity correction, not a
+physical measurement of the manufactured mould.
+
+Publish this as a new immutable source identity, `2026-10+bw.2`, based on
+official 2026-10. The older archives remain unchanged. Nothing has been
+submitted to the upstream Parts Tracker. The separate `27261` alternative
+diagonal is not included: its physical surface remains unverified.
+
 ## 2026-10+bw.1 — 2026-11-04
 
 Merge the complete official 2026-10 library, released 2026-10-26, onto the
